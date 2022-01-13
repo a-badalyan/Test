@@ -33,5 +33,4 @@ export default class WeatherSyncer {
             }
         }, 10000)
     }
-
 }
