@@ -15,7 +15,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      PGHOST: 'localhost'
       POSTGRES_USER: artem
       POSTGRES_PASSWORD: '12345'
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d:rw
 
